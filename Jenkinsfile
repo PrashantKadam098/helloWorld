@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment {
-        DOCKER_HUB_CREDENTIALS = credentials('dockerhub-credentials')  
-        AWS_CREDENTIALS = credentials('aws-credentials')  
+        DOCKER_HUB_CREDENTIALS = credentials('kprashant007-dockerhub')  
+        AWS_CREDENTIALS = credentials('awsJenkinsUser')  
         EC2_UAT_IP = 'uat-ec2-ip'  
         EC2_PROD_IP = 'prod-ec2-ip'  
         IMAGE_NAME = 'dotnet-hello-world'
